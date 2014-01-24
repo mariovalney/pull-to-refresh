@@ -1,10 +1,17 @@
-$(document).ready(function(){
+$JQuery(document).ready(function(){
 
-    $('<div id="push-to-refresh"></div>').prependTo( ".touch" );
+    $JQuery(".touch").prepend('<div id="push-to-refresh"></div>');
 
-    $(document).hover( function () {
-        alert('dsds');
-        var distanciaDoTopo = $(".touch").css({padding-top});
-        $("#push-to-refresh").height( distanciaDoTopo );
-    });
+    $('#touch').swipeDown(function(){
+	    var distanciaDoTopo = $JQuery(".touch").css("padding-top");
+	    $JQuery("#push-to-refresh").height( distanciaDoTopo );
+	    distanciaDoTopo = (distanciaDoTopo + 1);
+	    $JQuery("#push-to-refresh").css("padding-top",distanciaDoTopo);
+
+	});
+
 });
+
+
+
+

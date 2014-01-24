@@ -1,13 +1,29 @@
-body {background: #eeebed;line-height: 1; font-size:14px; font-family:"Tahoma"; color:#ffffff;}
+/* Resets e HTML 5 */
+html, body, div, span, applet, object, iframe, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, ieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+a {text-decoration:none;}
+
+/* CSS */
+body {background: #eeebed;line-height: 1; font-size:14px; font-family:"Tahoma"; color:#ffffff;position: relative;}
 
 .full-width {display: block; position: relative;padding: 1em;}
 header {background-color: #660000;}
 article {background-color: #006600;}
 footer {background-color: #000066;}
 
+.touch {
+	padding-top: 30px;
+}
+
 #push-to-refresh {
 	width: 100%;
-	position: relative;
-	height: 0px;
+	position: absolute;
 	background: #000;
+	top: 0px;
+
+	height: 20px;
 }
